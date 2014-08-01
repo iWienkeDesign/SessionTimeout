@@ -13,10 +13,11 @@ Create a last_activity column in your Users Table
 
 ```
 
-Whereever you are login the user in, you will also need to update that database table when they login 
+Whereever you login your user in, you will also need to update that database table when they login 
 
 
 ```php
+//Your login code above this 
 $now = new DateTime(); 
 $user->last_activity = $now;
 $user->save(); 
